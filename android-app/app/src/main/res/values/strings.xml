@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">AppiumWorkshop</string>
+    <string name="appium_conf">Welcome to\nAppium Conference 2019</string>
+    <string name="lets_get_started">Let\'s get started</string>
+</resources>
