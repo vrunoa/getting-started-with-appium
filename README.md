@@ -1,1 +1,1 @@
-# getting-started-with-appium
+# Getting started with Appium [![Build Status](https://travis-ci.org/vrunoa/getting-started-with-appium.svg?branch=master)](https://travis-ci.org/vrunoa/getting-started-with-appium)
