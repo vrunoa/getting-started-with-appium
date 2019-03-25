@@ -55,6 +55,9 @@ describe('Android Workshop tests', async () => {
         await sleep(1500);
         let activity = await driver.getCurrentDeviceActivity()
         expect(activity).to.equal('.LoginActivity');
+        let el = await driver.elementByXPath('/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout[1]/android.view.ViewGroup/android.widget.TextView');
+        expect(await el.isDisplayed()).to.equal(true);
+        expect(await el.text()).to.equal('Getting started with appium');
     });
     it('Test LoginActivity has all elements displayed', async () => {
         let el = await driver.elementById('yourNameText');
@@ -64,10 +67,10 @@ describe('Android Workshop tests', async () => {
         expect(await el.isDisplayed()).to.equal(true);
         expect(await el.text()).to.equal('');
         el = await driver.elementById('checkbox');
-        expect(await el.getAttribute('value')).to.equal(false);
+        expect(JSON.parse(await el.getAttribute('checked'))).to.equal(false);
         expect(await el.isDisplayed()).to.equal(true);
         el = await driver.elementById('haveFunText');
-        expect(await el.text()).to.equal('I agree to have fun in this workshop');
+        expect(await el.text()).to.equal('I agree to have fun doing this workshop');
         expect(await el.isDisplayed()).to.equal(true);
         el = await driver.elementById('beginBtt');
         expect(await el.isDisplayed()).to.equal(true);
