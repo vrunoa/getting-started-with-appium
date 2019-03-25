@@ -28,7 +28,6 @@ if (process.env.CLOUD_PROVIDER) {
         app_path: app
     })
     if (err) {
-        console.log(err);
         throw new Error("Failed to upload app! :(");
     }
     caps['app'] = 'sauce-storage:app-debug.apk'
