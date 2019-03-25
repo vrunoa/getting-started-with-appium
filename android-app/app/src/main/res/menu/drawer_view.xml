@@ -14,5 +14,17 @@
             android:id="@+id/bttWorkshops"
             android:title="@string/workshops"
             />
+        <item
+            android:id="@+id/bttConduct"
+            android:title="@string/conduct"
+            />
+        <item
+            android:id="@+id/bttData"
+            android:title="@string/data_promise"
+            />
+        <item
+            android:id="@+id/bttTerms"
+            android:title="@string/terms"
+            />
     </group>
 </menu>

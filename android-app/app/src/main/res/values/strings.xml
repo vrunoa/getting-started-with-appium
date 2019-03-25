@@ -13,4 +13,7 @@
     <string name="sponsors">Sponsors</string>
     <string name="location">Location</string>
     <string name="workshops">Workshops</string>
+    <string name="conduct">Code of conduct</string>
+    <string name="data_promise">Data promise</string>
+    <string name="terms">Terms</string>
 </resources>

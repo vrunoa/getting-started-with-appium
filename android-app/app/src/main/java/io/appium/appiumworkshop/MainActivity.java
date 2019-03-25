@@ -18,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
     private DrawerLayout drawerLayout;
     private NavigationView navView;
     private FrameLayout frameLayout;
+    private WebView webView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,6 +41,9 @@ public class MainActivity extends AppCompatActivity {
         
         navView = findViewById(R.id.nav_view);
         frameLayout = findViewById(R.id.content_frame);
+        
+        webView = findViewById(R.id.webview);
+        webView.loadUrl("http://appiumconf.com");
     }
 
     @Override
