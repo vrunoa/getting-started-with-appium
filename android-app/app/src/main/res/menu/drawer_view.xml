@@ -2,7 +2,17 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android" >
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_camera"
-            android:title="Hello" />
+            android:id="@+id/bttSchedule"
+            android:title="@string/schedule" />
+        <item
+            android:id="@+id/bttSponsors"
+            android:title="@string/sponsors" />
+        <item
+            android:id="@+id/bttLocation"
+            android:title="@string/location" />
+        <item
+            android:id="@+id/bttWorkshops"
+            android:title="@string/workshops"
+            />
     </group>
 </menu>

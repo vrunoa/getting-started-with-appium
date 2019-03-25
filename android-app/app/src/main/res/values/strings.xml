@@ -9,4 +9,8 @@
     <string name="please_set_ur_name">Please enter your name to move forward</string>
     <string name="please_agree_have_fun">You must agree to have fun to proceed with the workshop</string>
     <string name="welcome_user">Welcome %s</string>
+    <string name="schedule">Schedule</string>
+    <string name="sponsors">Sponsors</string>
+    <string name="location">Location</string>
+    <string name="workshops">Workshops</string>
 </resources>
