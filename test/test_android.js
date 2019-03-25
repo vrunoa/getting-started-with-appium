@@ -1,22 +1,33 @@
-const wd = require('wd')
+const wd = require('wd');
 const sleep = require('asyncbox').sleep
-const chai = require('chai')
+const chai = require('chai');
+const path = require('path');
+const pkgDir = require('pkg-dir');
+const uploader = require('sauce-uploader');
+
 const expect = chai.expect
 
 let driver, res;
+let app = path.join(pkgDir.sync(__dirname), 'android-app', 'app', 'build', 'outputs', 'apk', 'debug', 'app-debug.apk');
+let endpoint = 'http://localhost:4723/wd/hub'
+if (process.env.CLOUD_PROVIDER) {
+    endpoint = `http://${process.env.SAUCE_USERNAME}:${process.env.SAUCE_ACCESS_KEY}@ondemand.saucelabs.com:80/wd/hub`
+    [err, response] = uploader.uploadSync({
+        user: process.env.SAUCE_USERNAME,
+        access_key: process.env.SAUCE_ACCESS_KEY,
+        app_path: app
+    })
+    app = 'sauce-storage:app-debug.apk'
+}
 let caps = {
     'appPackage': 'io.appium.appiumworkshop',
     'appActivity': '.SplashActivity',
     'appWaitActivity': '.SplashActivity',
     'browserName': '',
-    'deviceName': 'Android Emulator',
+    'deviceName': 'Android GoogleApi Emulator',
     'platformName': 'Android',
-    'platformVersion': '7.1.1'
-}
-
-let endpoint = 'http://localhost:4723/wd/hub'
-if (process.env.CLOUD_PROVIDER) {
-    endpoint =  `http://${process.env.SAUCE_USERNAME}:${process.env.SAUCE_ACCESS_KEY}@ondemand.saucelabs.com:80/wd/hub`
+    'platformVersion': '7.1.1',
+    'app': app
 }
 
 describe('Android Workshop tests', async () => {
@@ -53,7 +64,7 @@ describe('Android Workshop tests', async () => {
         expect(await el.isDisplayed()).to.equal(true);
         expect(await el.text()).to.equal('');
         el = await driver.elementById('checkbox');
-        expect(await el.getValue()).to.equal(false);
+        expect(await el.getAttribute('value')).to.equal(false);
         expect(await el.isDisplayed()).to.equal(true);
         el = await driver.elementById('haveFunText');
         expect(await el.text()).to.equal('I agree to have fun in this workshop');
