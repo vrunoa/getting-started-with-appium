@@ -12,21 +12,24 @@ let app = path.join(pkgDir.sync(__dirname), 'android-app', 'app', 'build', 'outp
 let endpoint = 'http://localhost:4723/wd/hub'
 if (process.env.CLOUD_PROVIDER) {
     endpoint = `http://${process.env.SAUCE_USERNAME}:${process.env.SAUCE_ACCESS_KEY}@ondemand.saucelabs.com:80/wd/hub`
-    [err, response] = uploader.uploadSync({
+    let [err, response] = uploader.uploadSync({
         user: process.env.SAUCE_USERNAME,
         access_key: process.env.SAUCE_ACCESS_KEY,
         app_path: app
     })
+    if (err) {
+        throw new Error("Failed to upload app! :(");
+    }
     app = 'sauce-storage:app-debug.apk'
 }
+
 let caps = {
     'appPackage': 'io.appium.appiumworkshop',
     'appActivity': '.SplashActivity',
     'appWaitActivity': '.SplashActivity',
-    'browserName': '',
     'deviceName': 'Android GoogleApi Emulator',
     'platformName': 'Android',
-    'platformVersion': '7.1.1',
+    'platformVersion': '7.1',
     'app': app
 }
 
