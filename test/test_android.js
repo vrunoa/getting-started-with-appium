@@ -38,6 +38,7 @@ describe('Android Workshop tests', async () => {
     before(async () => {
         driver = await wd.promiseChainRemote(endpoint)
         res = await driver.init(caps)
+        console.log(res);
     });
     after(async () => {
         await driver.quit()
