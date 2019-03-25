@@ -38,6 +38,7 @@
     "eslint": "^3.19.0",
     "gulp": "^3.9.1",
     "mocha": "^3.4.1",
+    "sauce-uploader": "^1.0.5",
     "should": "^2.1.1"
   }
 }
