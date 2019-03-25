@@ -54,10 +54,21 @@
 
         </LinearLayout>
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/alertText"
+            android:visibility="visible"
+            android:textColor="#f00"
+            android:text=""
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/termsRow"
+            />
+
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/termsRow"
+            android:layout_below="@+id/alertText"
             android:layout_centerHorizontal="true"
             android:layout_centerVertical="true"
             android:text="@string/begin_workshop"
@@ -65,7 +76,7 @@
             android:padding="10pt"
             android:textColor="@color/gray"
             android:id="@+id/beginBtt"
-            android:layout_marginTop="10pt"
+            android:layout_marginTop="5pt"
             />
 
     </RelativeLayout>

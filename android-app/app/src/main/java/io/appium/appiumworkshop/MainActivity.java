@@ -10,5 +10,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        String username = getIntent().getStringExtra("SESSION_USERNAME");
+        setTitle(getString(R.string.welcome_user, username));
     }
 }

@@ -76,4 +76,32 @@ describe('Android Workshop tests', async () => {
         expect(await el.isDisplayed()).to.equal(true);
         expect(await el.text()).to.equal('BEGIN THE WORKSHOP');
     });
+    it('Test you cant start the workshop without setting your name', async() => {
+        let el = await driver.elementById('beginBtt');
+        await el.click();
+        el = await driver.elementById('alertText');
+        expect(await el.isDisplayed()).to.equal(true);
+        expect(await el.text()).to.equal('Please enter your name to move forward');
+    });
+    it('Test you can enter your name but cant start the workshop without agreeing terms', async() => {
+        let el = await driver.elementById('editText');
+        await el.sendKeys('vrunoa')
+        await driver.hideKeyboard();
+        el = await driver.elementById('beginBtt');
+        await el.click()
+        el = await driver.elementById('alertText');
+        expect(await el.isDisplayed()).to.equal(true);
+        expect(await el.text()).to.equal('You must agree to have fun to proceed with the workshop');
+    });
+    it('Test you can click on agree and move to the next activity', async () => {
+        let el = await driver.elementById('checkbox');
+        await el.click();
+        el = await driver.elementById('beginBtt');
+        await el.click();
+        let activity = await driver.getCurrentDeviceActivity();
+        expect(activity).to.equal('.MainActivity');
+        el = await driver.elementByXPath('/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout[1]/android.view.ViewGroup/android.widget.TextView');
+        expect(await el.isDisplayed()).to.equal(true);
+        expect(await el.text()).to.equal('Welcome vrunoa');
+    });
 });
