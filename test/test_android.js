@@ -10,6 +10,16 @@ const expect = chai.expect
 let driver, res;
 let app = path.join(pkgDir.sync(__dirname), 'android-app', 'app', 'build', 'outputs', 'apk', 'debug', 'app-debug.apk');
 let endpoint = 'http://localhost:4723/wd/hub'
+let caps = {
+    'appPackage': 'io.appium.appiumworkshop',
+    'appActivity': '.SplashActivity',
+    'appWaitActivity': '.SplashActivity',
+    'deviceName': 'Android GoogleApi Emulator',
+    'platformName': 'Android',
+    'platformVersion': '7.1',
+    'app': app,
+}
+
 if (process.env.CLOUD_PROVIDER) {
     endpoint = `http://${process.env.SAUCE_USERNAME}:${process.env.SAUCE_ACCESS_KEY}@ondemand.saucelabs.com:80/wd/hub`
     let [err, response] = uploader.uploadSync({
@@ -20,17 +30,8 @@ if (process.env.CLOUD_PROVIDER) {
     if (err) {
         throw new Error("Failed to upload app! :(");
     }
-    app = 'sauce-storage:app-debug.apk'
-}
-
-let caps = {
-    'appPackage': 'io.appium.appiumworkshop',
-    'appActivity': '.SplashActivity',
-    'appWaitActivity': '.SplashActivity',
-    'deviceName': 'Android GoogleApi Emulator',
-    'platformName': 'Android',
-    'platformVersion': '7.1',
-    'app': app
+    caps['app'] = 'sauce-storage:app-debug.apk'
+    caps['name'] = "Getting Started with Appium - Android test"
 }
 
 describe('Android Workshop tests', async () => {
