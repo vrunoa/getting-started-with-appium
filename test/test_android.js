@@ -17,7 +17,7 @@ let caps = {
     'deviceName': 'Android GoogleApi Emulator',
     'platformName': 'Android',
     'platformVersion': '7.1',
-    'app': app,
+    'app': app
 }
 
 if (process.env.CLOUD_PROVIDER) {
@@ -134,11 +134,56 @@ describe('Android Workshop tests', async () => {
         el = await driver.elementById('bttConduct');
         expect(await el.isDisplayed()).to.equal(true);
         expect(await el.text()).to.equal('CODE OF CONDUCT');
-        el = await driver.elementById('bttData');
-        expect(await el.isDisplayed()).to.equal(true);
-        expect(await el.text()).to.equal('DATA PROMISE');
         el = await driver.elementById('bttTerms');
         expect(await el.isDisplayed()).to.equal(true);
         expect(await el.text()).to.equal('TERMS');
+        await driver.back();
+    });
+    it('Test terms section is opened and shows the correct text', async () => {
+        let el = await driver.elementByXPath('//android.widget.ImageButton[@content-desc="Navigate up"]');
+        await el.click();
+        el = await driver.elementById('bttTerms');
+        expect(await el.isDisplayed()).to.equal(true);
+        await el.click();
+        let ctxs = await driver.contexts();
+        expect(ctxs.length).to.equal(2);
+        await driver.context('WEBVIEW_io.appium.appiumworkshop');
+        el = await driver.elementById('section_title')
+        expect(await el.isDisplayed()).to.equal(true);
+        expect(await el.text()).to.equal('Terms & Conditions');
+        await driver.context('NATIVE_APP');
+    });
+    it('Test conduct section is opened and shows the correct text', async () => {
+        let el = await driver.elementByXPath('//android.widget.ImageButton[@content-desc="Navigate up"]');
+        await el.click();
+        el = await driver.elementById('bttConduct');
+        expect(await el.isDisplayed()).to.equal(true);
+        await el.click();
+        let ctxs = await driver.contexts();
+        expect(ctxs.length).to.equal(2);
+        await driver.context('WEBVIEW_io.appium.appiumworkshop');
+        el = await driver.elementByClassName('section_title')
+        expect(await el.isDisplayed()).to.equal(true);
+        expect(await el.text()).to.equal('Code of Conduct');
+        await driver.context('NATIVE_APP');
+    });
+    it('Test location opens GoogleMaps app', async () => {
+        let el = await driver.elementByXPath('//android.widget.ImageButton[@content-desc="Navigate up"]');
+        await el.click();
+        el = await driver.elementById('bttLocation');
+        await el.click();
+        await sleep(4000);
+        let pkg = await driver.getCurrentPackage();
+        expect(pkg).to.equal('com.google.android.apps.maps');
+        let activity = await driver.getCurrentDeviceActivity();
+        expect(activity).to.equal('com.google.android.maps.MapsActivity');
+        // going back to our app
+        await driver.back();
+        await driver.back();
+        pkg = await driver.getCurrentPackage();
+        expect(pkg).to.equal('io.appium.appiumworkshop');
+        activity = await driver.getCurrentDeviceActivity();
+        expect(activity).to.equal('.MainActivity');
+        await driver.back();
     });
 });
