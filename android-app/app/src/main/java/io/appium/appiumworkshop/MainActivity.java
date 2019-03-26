@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
         frameLayout = findViewById(R.id.content_frame);
         
         webView = findViewById(R.id.webview);
-        webView.loadUrl("http://appiumconf.com");
+        // webView.loadUrl("http://appiumconf.com");
     }
 
     @Override

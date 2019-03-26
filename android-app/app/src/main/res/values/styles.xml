@@ -25,4 +25,10 @@
         <item name="android:textAlignment">center</item>
     </style>
 
+    <style name="grayButton">
+        <item name="android:background">@drawable/gray_button</item>
+        <item name="android:layout_marginBottom">3dp</item>
+        <item name="android:textColor">#fff</item>
+    </style>
+
 </resources>
