@@ -1,5 +1,7 @@
 package io.appium.appiumworkshop;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
@@ -11,6 +13,7 @@ import android.view.Gravity;
 import android.view.MenuItem;
 import android.view.View;
 import android.webkit.WebView;
+import android.widget.Button;
 import android.widget.FrameLayout;
 
 public class MainActivity extends AppCompatActivity {
@@ -43,7 +46,34 @@ public class MainActivity extends AppCompatActivity {
         frameLayout = findViewById(R.id.content_frame);
         
         webView = findViewById(R.id.webview);
-        // webView.loadUrl("http://appiumconf.com");
+        webView.getSettings().setJavaScriptEnabled(true);
+
+        Button bttTerms = navView.findViewById(R.id.bttTerms);
+        bttTerms.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                onBackPressed();
+                webView.loadUrl("file:///android_asset/terms.html");
+            }
+        });
+
+        Button bttConduct = navView.findViewById(R.id.bttConduct);
+        bttConduct.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                onBackPressed();
+                webView.loadUrl("file:///android_asset/code_conduct.html");
+            }
+        });
+
+        Button bttLocation = navView.findViewById(R.id.bttLocation);
+        bttLocation.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.google.ca/maps/place/Sheraton+Grand+Bangalore+Hotel+at+Brigade+Gateway/@13.0127271,77.5550357,15z/data=!4m7!3m6!1s0x0:0x6832860dbb5cd434!5m1!1s2018-10-28!8m2!3d13.0127271!4d77.5550357"));
+                startActivity(browserIntent);
+            }
+        });
     }
 
     @Override

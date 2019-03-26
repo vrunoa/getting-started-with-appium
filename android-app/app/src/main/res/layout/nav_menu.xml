@@ -46,14 +46,6 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/data_promise"
-        android:id="@+id/bttData"
-        style="@style/grayButton"
-        />
-
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:text="@string/terms"
         android:id="@+id/bttTerms"
         style="@style/grayButton"
