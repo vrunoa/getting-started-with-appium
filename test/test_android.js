@@ -38,7 +38,7 @@ describe('Android Workshop tests', async () => {
     before(async () => {
         driver = await wd.promiseChainRemote(endpoint)
         res = await driver.init(caps)
-        console.log(res);
+        console.log(`Session ID ${res[0]}`);
     });
     after(async () => {
         await driver.quit()
@@ -121,15 +121,24 @@ describe('Android Workshop tests', async () => {
         expect(await el.text()).to.equal('Welcome to\nAppium Conference 2019');
         el = await driver.elementById('bttSchedule');
         expect(await el.isDisplayed()).to.equal(true);
-        expect(await el.text()).to.equal('Schedule');
+        expect(await el.text()).to.equal('SCHEDULE');
         el = await driver.elementById('bttSponsors');
         expect(await el.isDisplayed()).to.equal(true);
-        expect(await el.text()).to.equal('Sponsors');
+        expect(await el.text()).to.equal('SPONSORS');
         el = await driver.elementById('bttLocation');
         expect(await el.isDisplayed()).to.equal(true);
-        expect(await el.text()).to.equal('Location');
+        expect(await el.text()).to.equal('LOCATION');
         el = await driver.elementById('bttWorkshops');
         expect(await el.isDisplayed()).to.equal(true);
-        expect(await el.text()).to.equal('Workshops');
+        expect(await el.text()).to.equal('WORKSHOPS');
+        el = await driver.elementById('bttConduct');
+        expect(await el.isDisplayed()).to.equal(true);
+        expect(await el.text()).to.equal('CODE OF CONDUCT');
+        el = await driver.elementById('bttData');
+        expect(await el.isDisplayed()).to.equal(true);
+        expect(await el.text()).to.equal('DATA PROMISE');
+        el = await driver.elementById('bttTerms');
+        expect(await el.isDisplayed()).to.equal(true);
+        expect(await el.text()).to.equal('TERMS');
     });
 });
