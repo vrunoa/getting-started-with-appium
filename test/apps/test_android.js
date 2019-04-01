@@ -17,7 +17,8 @@ let caps = {
     'deviceName': 'Android GoogleApi Emulator',
     'platformName': 'Android',
     'platformVersion': '8.0',
-    'app': app
+    'app': app,
+    'public': true
 }
 
 if (process.env.CLOUD_PROVIDER) {
