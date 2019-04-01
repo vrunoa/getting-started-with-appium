@@ -16,7 +16,7 @@ let caps = {
     'appWaitActivity': '.SplashActivity',
     'deviceName': 'Android GoogleApi Emulator',
     'platformName': 'Android',
-    'platformVersion': '7.1',
+    'platformVersion': '8.0',
     'app': app
 }
 
@@ -91,7 +91,9 @@ describe('Android Workshop tests', async () => {
     it('Test you can enter your name but cant start the workshop without agreeing terms', async() => {
         let el = await driver.elementById('editText');
         await el.sendKeys('vrunoa')
-        await driver.hideKeyboard();
+        if (await driver.isKeyboardShown()) {
+            await driver.hideKeyboard();
+        }
         el = await driver.elementById('beginBtt');
         await el.click()
         el = await driver.elementById('alertText');
