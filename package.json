@@ -27,7 +27,7 @@
   },
   "scripts": {
     "test": "mocha test/apps/* --compilers js:babel-core/register -t 0 --colors --bail",
-    "my-first-test": "mocha test/test_android_calculator.js --compilers js:babel-core/register -t 0 --colors --bail"
+    "my-first-android-test": "mocha test/test_android_calculator.js --compilers js:babel-core/register -t 0 --colors --bail"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
