@@ -91,7 +91,7 @@ describe('Android Workshop tests', async () => {
     });
     it('Test you can enter your name but cant start the workshop without agreeing terms', async() => {
         let el = await driver.elementById('editText');
-        await el.sendKeys('vrunoa')
+        await el.sendKeys('workshoper')
         if (await driver.isKeyboardShown()) {
             await driver.hideKeyboard();
         }
@@ -110,7 +110,7 @@ describe('Android Workshop tests', async () => {
         expect(activity).to.equal('.MainActivity');
         el = await driver.elementByXPath('/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.support.v4.widget.DrawerLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.TextView');
         expect(await el.isDisplayed()).to.equal(true);
-        expect(await el.text()).to.equal('Welcome vrunoa');
+        expect(await el.text()).to.equal('Welcome workshoper');
         el = await driver.elementByXPath('//android.widget.ImageButton[@content-desc="Navigate up"]');
         expect(await el.isDisplayed()).to.equal(true);
     });
