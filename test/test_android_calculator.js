@@ -25,7 +25,7 @@ describe('Android Workshop calculator tests', async () => {
         await driver.quit()
     });
     it('Test calculator can multiply', async () => {
-        console.log(await driver.source())
+        // console.log(await driver.source())
         let el = await driver.elementById('com.android.calculator2:id/digit_2');
         await el.click();
         el = await driver.elementById('com.android.calculator2:id/op_mul');
