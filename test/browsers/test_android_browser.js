@@ -13,6 +13,12 @@ let caps = {
     'platformVersion': '8.0'
 }
 
+if (process.env.CLOUD_PROVIDER) {
+    endpoint = `http://${process.env.SAUCE_USERNAME}:${process.env.SAUCE_ACCESS_KEY}@ondemand.saucelabs.com:80/wd/hub`
+    caps['name'] = "Getting Started with Appium - Android Web test"
+}
+
+
 describe('Android browser tests', async () => {
     before(async () => {
         driver = await wd.promiseChainRemote(endpoint)
@@ -24,7 +30,7 @@ describe('Android browser tests', async () => {
     });
     it('Test can open URL and title is correct', async () => {
         await driver.get("https://saucelabs.github.io/training-test-page/");
-        await sleep(500)
+        await sleep(500);
         let title = await driver.title();
         expect(title).to.equal("I am a page title - Sauce Labs");
     });
