@@ -1,0 +1,443 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "ViewController"
+provides-nominal:
+- "10Calculator14ViewControllerC"
+provides-member:
+- ["10Calculator14ViewControllerC", ""]
+provides-dynamic-lookup:
+- "appendDigit"
+- "calculate"
+- "clearDisplay"
+- "displayLabel"
+- "saveOperand"
+- "touch"
+depends-top-level:
+- !private "*="
+- !private "+"
+- !private "+="
+- !private "-"
+- !private "/"
+- "AnyObject"
+- "AssignmentPrecedence"
+- "BooleanLiteralType"
+- "Double"
+- "FloatLiteralType"
+- "IntegerLiteralType"
+- !private "NumberFormatter"
+- "StringLiteralType"
+- "TernaryPrecedence"
+- "UIButton"
+- "UILabel"
+- "UIViewController"
+- "UnicodeScalarType"
+- "ViewController"
+- !private "~="
+depends-member:
+- !private ["So15CALayerDelegateP", "currentTitle"]
+- !private ["So15CALayerDelegateP", "text"]
+- !private ["s7CVarArgP", "NumberFormatter"]
+- ["s7CVarArgP", ""]
+- !private ["s7CVarArgP", "currentTitle"]
+- !private ["s7CVarArgP", "displayLabel"]
+- !private ["s7CVarArgP", "displayValue"]
+- !private ["s7CVarArgP", "doubleValue"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "isFirstDigit"]
+- !private ["s7CVarArgP", "number"]
+- !private ["s7CVarArgP", "operand1"]
+- !private ["s7CVarArgP", "operation"]
+- !private ["s7CVarArgP", "text"]
+- !private ["s28CustomDebugStringConvertibleP", "NumberFormatter"]
+- ["s28CustomDebugStringConvertibleP", ""]
+- !private ["s28CustomDebugStringConvertibleP", "currentTitle"]
+- !private ["s28CustomDebugStringConvertibleP", "displayLabel"]
+- !private ["s28CustomDebugStringConvertibleP", "displayValue"]
+- !private ["s28CustomDebugStringConvertibleP", "doubleValue"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "isFirstDigit"]
+- !private ["s28CustomDebugStringConvertibleP", "number"]
+- !private ["s28CustomDebugStringConvertibleP", "operand1"]
+- !private ["s28CustomDebugStringConvertibleP", "operation"]
+- !private ["s28CustomDebugStringConvertibleP", "text"]
+- !private ["s17CustomReflectableP", "text"]
+- !private ["s23CustomStringConvertibleP", "NumberFormatter"]
+- ["s23CustomStringConvertibleP", ""]
+- !private ["s23CustomStringConvertibleP", "appendInterpolation"]
+- !private ["s23CustomStringConvertibleP", "appendLiteral"]
+- !private ["s23CustomStringConvertibleP", "currentTitle"]
+- !private ["s23CustomStringConvertibleP", "displayLabel"]
+- !private ["s23CustomStringConvertibleP", "displayValue"]
+- !private ["s23CustomStringConvertibleP", "doubleValue"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "isFirstDigit"]
+- !private ["s23CustomStringConvertibleP", "number"]
+- !private ["s23CustomStringConvertibleP", "operand1"]
+- !private ["s23CustomStringConvertibleP", "operation"]
+- !private ["s23CustomStringConvertibleP", "text"]
+- !private ["Se", "text"]
+- !private ["s26DefaultStringInterpolationV", "appendInterpolation"]
+- !private ["s26DefaultStringInterpolationV", "appendLiteral"]
+- !private ["SE", "text"]
+- !private ["SQ", "NumberFormatter"]
+- ["SQ", ""]
+- !private ["SQ", "currentTitle"]
+- !private ["SQ", "displayLabel"]
+- !private ["SQ", "displayValue"]
+- !private ["SQ", "doubleValue"]
+- !private ["SQ", "init"]
+- !private ["SQ", "init"]
+- !private ["SQ", "isFirstDigit"]
+- !private ["SQ", "number"]
+- !private ["SQ", "operand1"]
+- !private ["SQ", "operation"]
+- !private ["SQ", "text"]
+- !private ["s27ExpressibleByBooleanLiteralP", "doubleValue"]
+- !private ["s25ExpressibleByFloatLiteralP", "doubleValue"]
+- !private ["s27ExpressibleByIntegerLiteralP", "doubleValue"]
+- !private ["s23ExpressibleByNilLiteralP", "text"]
+- !private ["So11NSFormatterC", "init"]
+- !private ["So11NSFormatterC", "number"]
+- !private ["SH", "NumberFormatter"]
+- ["SH", ""]
+- !private ["SH", "currentTitle"]
+- !private ["SH", "displayLabel"]
+- !private ["SH", "displayValue"]
+- !private ["SH", "doubleValue"]
+- !private ["SH", "init"]
+- !private ["SH", "init"]
+- !private ["SH", "isFirstDigit"]
+- !private ["SH", "number"]
+- !private ["SH", "operand1"]
+- !private ["SH", "operation"]
+- !private ["SH", "text"]
+- !private ["So8NSCodingP", "NumberFormatter"]
+- ["So8NSCodingP", ""]
+- !private ["So8NSCodingP", "currentTitle"]
+- !private ["So8NSCodingP", "displayLabel"]
+- !private ["So8NSCodingP", "displayValue"]
+- !private ["So8NSCodingP", "doubleValue"]
+- !private ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "isFirstDigit"]
+- !private ["So8NSCodingP", "number"]
+- !private ["So8NSCodingP", "operand1"]
+- !private ["So8NSCodingP", "operation"]
+- !private ["So8NSCodingP", "text"]
+- !private ["So9NSCopyingP", "doubleValue"]
+- !private ["So9NSCopyingP", "init"]
+- !private ["So9NSCopyingP", "number"]
+- !private ["So26NSExtensionRequestHandlingP", "NumberFormatter"]
+- ["So26NSExtensionRequestHandlingP", ""]
+- !private ["So26NSExtensionRequestHandlingP", "displayLabel"]
+- !private ["So26NSExtensionRequestHandlingP", "displayValue"]
+- !private ["So26NSExtensionRequestHandlingP", "init"]
+- !private ["So26NSExtensionRequestHandlingP", "init"]
+- !private ["So26NSExtensionRequestHandlingP", "isFirstDigit"]
+- !private ["So26NSExtensionRequestHandlingP", "operand1"]
+- !private ["So26NSExtensionRequestHandlingP", "operation"]
+- !private ["So8NSNumberC", "doubleValue"]
+- ["So8NSObjectC", "AnyObject"]
+- ["So8NSObjectC", "Double"]
+- !private ["So8NSObjectC", "NumberFormatter"]
+- ["So8NSObjectC", "UIButton"]
+- ["So8NSObjectC", "UILabel"]
+- ["So8NSObjectC", "appendDigit"]
+- ["So8NSObjectC", "calculate"]
+- ["So8NSObjectC", "clearDisplay"]
+- !private ["So8NSObjectC", "currentTitle"]
+- ["So8NSObjectC", "displayLabel"]
+- ["So8NSObjectC", "displayValue"]
+- !private ["So8NSObjectC", "doubleValue"]
+- ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "init"]
+- ["So8NSObjectC", "isFirstDigit"]
+- !private ["So8NSObjectC", "number"]
+- ["So8NSObjectC", "operand1"]
+- ["So8NSObjectC", "operation"]
+- ["So8NSObjectC", "saveOperand"]
+- !private ["So8NSObjectC", "text"]
+- ["So8NSObjectC", "touch"]
+- !private ["So8NSObjectP", "NumberFormatter"]
+- ["So8NSObjectP", ""]
+- !private ["So8NSObjectP", "currentTitle"]
+- !private ["So8NSObjectP", "displayLabel"]
+- !private ["So8NSObjectP", "displayValue"]
+- !private ["So8NSObjectP", "doubleValue"]
+- !private ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "isFirstDigit"]
+- !private ["So8NSObjectP", "number"]
+- !private ["So8NSObjectP", "operand1"]
+- !private ["So8NSObjectP", "operation"]
+- !private ["So8NSObjectP", "text"]
+- !private ["So14NSSecureCodingP", "doubleValue"]
+- !private ["So7NSValueC", "doubleValue"]
+- !private ["So17NSNumberFormatterC", "init"]
+- !private ["So17NSNumberFormatterC", "number"]
+- !private ["Sq", "text"]
+- !private ["s27StringInterpolationProtocolP", "appendInterpolation"]
+- !private ["s27StringInterpolationProtocolP", "appendLiteral"]
+- !private ["s16TextOutputStreamP", "appendInterpolation"]
+- !private ["s16TextOutputStreamP", "appendLiteral"]
+- !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "currentTitle"]
+- !private ["So29UIAccessibilityIdentificationP", "currentTitle"]
+- !private ["So29UIAccessibilityIdentificationP", "text"]
+- !private ["So12UIAppearanceP", "currentTitle"]
+- !private ["So12UIAppearanceP", "text"]
+- !private ["So21UIAppearanceContainerP", "NumberFormatter"]
+- ["So21UIAppearanceContainerP", ""]
+- !private ["So21UIAppearanceContainerP", "currentTitle"]
+- !private ["So21UIAppearanceContainerP", "displayLabel"]
+- !private ["So21UIAppearanceContainerP", "displayValue"]
+- !private ["So21UIAppearanceContainerP", "init"]
+- !private ["So21UIAppearanceContainerP", "init"]
+- !private ["So21UIAppearanceContainerP", "isFirstDigit"]
+- !private ["So21UIAppearanceContainerP", "operand1"]
+- !private ["So21UIAppearanceContainerP", "operation"]
+- !private ["So21UIAppearanceContainerP", "text"]
+- !private ["So8UIButtonC", "currentTitle"]
+- !private ["So18UIContentContainerP", "NumberFormatter"]
+- ["So18UIContentContainerP", ""]
+- !private ["So18UIContentContainerP", "displayLabel"]
+- !private ["So18UIContentContainerP", "displayValue"]
+- !private ["So18UIContentContainerP", "init"]
+- !private ["So18UIContentContainerP", "init"]
+- !private ["So18UIContentContainerP", "isFirstDigit"]
+- !private ["So18UIContentContainerP", "operand1"]
+- !private ["So18UIContentContainerP", "operation"]
+- !private ["So30UIContentSizeCategoryAdjustingP", "text"]
+- !private ["So9UIControlC", "currentTitle"]
+- !private ["So17UICoordinateSpaceP", "currentTitle"]
+- !private ["So17UICoordinateSpaceP", "text"]
+- !private ["So13UIDynamicItemP", "currentTitle"]
+- !private ["So13UIDynamicItemP", "text"]
+- !private ["So18UIFocusEnvironmentP", "NumberFormatter"]
+- ["So18UIFocusEnvironmentP", ""]
+- !private ["So18UIFocusEnvironmentP", "currentTitle"]
+- !private ["So18UIFocusEnvironmentP", "displayLabel"]
+- !private ["So18UIFocusEnvironmentP", "displayValue"]
+- !private ["So18UIFocusEnvironmentP", "init"]
+- !private ["So18UIFocusEnvironmentP", "init"]
+- !private ["So18UIFocusEnvironmentP", "isFirstDigit"]
+- !private ["So18UIFocusEnvironmentP", "operand1"]
+- !private ["So18UIFocusEnvironmentP", "operation"]
+- !private ["So18UIFocusEnvironmentP", "text"]
+- !private ["So11UIFocusItemP", "currentTitle"]
+- !private ["So11UIFocusItemP", "text"]
+- !private ["So20UIFocusItemContainerP", "currentTitle"]
+- !private ["So20UIFocusItemContainerP", "text"]
+- !private ["So7UILabelC", "text"]
+- !private ["So30UIPasteConfigurationSupportingP", "NumberFormatter"]
+- ["So30UIPasteConfigurationSupportingP", ""]
+- !private ["So30UIPasteConfigurationSupportingP", "currentTitle"]
+- !private ["So30UIPasteConfigurationSupportingP", "displayLabel"]
+- !private ["So30UIPasteConfigurationSupportingP", "displayValue"]
+- !private ["So30UIPasteConfigurationSupportingP", "init"]
+- !private ["So30UIPasteConfigurationSupportingP", "init"]
+- !private ["So30UIPasteConfigurationSupportingP", "isFirstDigit"]
+- !private ["So30UIPasteConfigurationSupportingP", "operand1"]
+- !private ["So30UIPasteConfigurationSupportingP", "operation"]
+- !private ["So30UIPasteConfigurationSupportingP", "text"]
+- ["So11UIResponderC", "AnyObject"]
+- ["So11UIResponderC", "Double"]
+- !private ["So11UIResponderC", "NumberFormatter"]
+- ["So11UIResponderC", "UIButton"]
+- ["So11UIResponderC", "UILabel"]
+- ["So11UIResponderC", "appendDigit"]
+- ["So11UIResponderC", "calculate"]
+- ["So11UIResponderC", "clearDisplay"]
+- !private ["So11UIResponderC", "currentTitle"]
+- ["So11UIResponderC", "displayLabel"]
+- ["So11UIResponderC", "displayValue"]
+- ["So11UIResponderC", "init"]
+- !private ["So11UIResponderC", "init"]
+- ["So11UIResponderC", "isFirstDigit"]
+- ["So11UIResponderC", "operand1"]
+- ["So11UIResponderC", "operation"]
+- ["So11UIResponderC", "saveOperand"]
+- !private ["So11UIResponderC", "text"]
+- ["So11UIResponderC", "touch"]
+- !private ["So30UIResponderStandardEditActionsP", "NumberFormatter"]
+- ["So30UIResponderStandardEditActionsP", ""]
+- !private ["So30UIResponderStandardEditActionsP", "currentTitle"]
+- !private ["So30UIResponderStandardEditActionsP", "displayLabel"]
+- !private ["So30UIResponderStandardEditActionsP", "displayValue"]
+- !private ["So30UIResponderStandardEditActionsP", "init"]
+- !private ["So30UIResponderStandardEditActionsP", "init"]
+- !private ["So30UIResponderStandardEditActionsP", "isFirstDigit"]
+- !private ["So30UIResponderStandardEditActionsP", "operand1"]
+- !private ["So30UIResponderStandardEditActionsP", "operation"]
+- !private ["So30UIResponderStandardEditActionsP", "text"]
+- !private ["So35UISpringLoadedInteractionSupportingP", "currentTitle"]
+- !private ["So16UIStateRestoringP", "NumberFormatter"]
+- ["So16UIStateRestoringP", ""]
+- !private ["So16UIStateRestoringP", "displayLabel"]
+- !private ["So16UIStateRestoringP", "displayValue"]
+- !private ["So16UIStateRestoringP", "init"]
+- !private ["So16UIStateRestoringP", "init"]
+- !private ["So16UIStateRestoringP", "isFirstDigit"]
+- !private ["So16UIStateRestoringP", "operand1"]
+- !private ["So16UIStateRestoringP", "operation"]
+- !private ["So18UITraitEnvironmentP", "NumberFormatter"]
+- ["So18UITraitEnvironmentP", ""]
+- !private ["So18UITraitEnvironmentP", "currentTitle"]
+- !private ["So18UITraitEnvironmentP", "displayLabel"]
+- !private ["So18UITraitEnvironmentP", "displayValue"]
+- !private ["So18UITraitEnvironmentP", "init"]
+- !private ["So18UITraitEnvironmentP", "init"]
+- !private ["So18UITraitEnvironmentP", "isFirstDigit"]
+- !private ["So18UITraitEnvironmentP", "operand1"]
+- !private ["So18UITraitEnvironmentP", "operation"]
+- !private ["So18UITraitEnvironmentP", "text"]
+- !private ["So23UIUserActivityRestoringP", "NumberFormatter"]
+- ["So23UIUserActivityRestoringP", ""]
+- !private ["So23UIUserActivityRestoringP", "currentTitle"]
+- !private ["So23UIUserActivityRestoringP", "displayLabel"]
+- !private ["So23UIUserActivityRestoringP", "displayValue"]
+- !private ["So23UIUserActivityRestoringP", "init"]
+- !private ["So23UIUserActivityRestoringP", "init"]
+- !private ["So23UIUserActivityRestoringP", "isFirstDigit"]
+- !private ["So23UIUserActivityRestoringP", "operand1"]
+- !private ["So23UIUserActivityRestoringP", "operation"]
+- !private ["So23UIUserActivityRestoringP", "text"]
+- !private ["So6UIViewC", "currentTitle"]
+- !private ["So6UIViewC", "text"]
+- ["So16UIViewControllerC", "AnyObject"]
+- ["So16UIViewControllerC", "Double"]
+- !private ["So16UIViewControllerC", "NumberFormatter"]
+- ["So16UIViewControllerC", "UIButton"]
+- ["So16UIViewControllerC", "UILabel"]
+- ["So16UIViewControllerC", ""]
+- ["So16UIViewControllerC", "appendDigit"]
+- ["So16UIViewControllerC", "calculate"]
+- ["So16UIViewControllerC", "clearDisplay"]
+- ["So16UIViewControllerC", "displayLabel"]
+- ["So16UIViewControllerC", "displayValue"]
+- ["So16UIViewControllerC", "init"]
+- !private ["So16UIViewControllerC", "init"]
+- ["So16UIViewControllerC", "isFirstDigit"]
+- ["So16UIViewControllerC", "operand1"]
+- ["So16UIViewControllerC", "operation"]
+- ["So16UIViewControllerC", "saveOperand"]
+- ["So16UIViewControllerC", "touch"]
+- ["10Calculator14ViewControllerC", "AnyObject"]
+- ["10Calculator14ViewControllerC", "Double"]
+- !private ["10Calculator14ViewControllerC", "NumberFormatter"]
+- ["10Calculator14ViewControllerC", "UIButton"]
+- ["10Calculator14ViewControllerC", "UILabel"]
+- ["10Calculator14ViewControllerC", "appendDigit"]
+- ["10Calculator14ViewControllerC", "calculate"]
+- ["10Calculator14ViewControllerC", "clearDisplay"]
+- ["10Calculator14ViewControllerC", "deinit"]
+- ["10Calculator14ViewControllerC", "displayLabel"]
+- ["10Calculator14ViewControllerC", "displayValue"]
+- ["10Calculator14ViewControllerC", "init"]
+- ["10Calculator14ViewControllerC", "isFirstDigit"]
+- ["10Calculator14ViewControllerC", "operand1"]
+- ["10Calculator14ViewControllerC", "operation"]
+- ["10Calculator14ViewControllerC", "saveOperand"]
+- ["10Calculator14ViewControllerC", "touch"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "doubleValue"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "NumberFormatter"]
+- ["10Foundation27_KeyValueCodingAndObservingP", ""]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "currentTitle"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "displayLabel"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "displayValue"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "doubleValue"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "isFirstDigit"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "number"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "operand1"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "operation"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "text"]
+- !private ["s21_ObjectiveCBridgeableP", "text"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "currentTitle"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "text"]
+depends-nominal:
+- !private "So15CALayerDelegateP"
+- "s7CVarArgP"
+- "s28CustomDebugStringConvertibleP"
+- !private "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- !private "Se"
+- !private "s26DefaultStringInterpolationV"
+- !private "SE"
+- "SQ"
+- !private "s27ExpressibleByBooleanLiteralP"
+- !private "s25ExpressibleByFloatLiteralP"
+- !private "s27ExpressibleByIntegerLiteralP"
+- !private "s23ExpressibleByNilLiteralP"
+- !private "So11NSFormatterC"
+- "SH"
+- "So8NSCodingP"
+- !private "So9NSCopyingP"
+- "So26NSExtensionRequestHandlingP"
+- !private "So8NSNumberC"
+- "So8NSObjectC"
+- "So8NSObjectP"
+- !private "So14NSSecureCodingP"
+- !private "So7NSValueC"
+- !private "So17NSNumberFormatterC"
+- !private "Sq"
+- !private "s27StringInterpolationProtocolP"
+- !private "s16TextOutputStreamP"
+- !private "So48UIAccessibilityContentSizeCategoryImageAdjustingP"
+- !private "So29UIAccessibilityIdentificationP"
+- !private "So12UIAppearanceP"
+- "So21UIAppearanceContainerP"
+- !private "So8UIButtonC"
+- "So18UIContentContainerP"
+- !private "So30UIContentSizeCategoryAdjustingP"
+- !private "So9UIControlC"
+- !private "So17UICoordinateSpaceP"
+- !private "So13UIDynamicItemP"
+- "So18UIFocusEnvironmentP"
+- !private "So11UIFocusItemP"
+- !private "So20UIFocusItemContainerP"
+- !private "So7UILabelC"
+- "So30UIPasteConfigurationSupportingP"
+- "So11UIResponderC"
+- "So30UIResponderStandardEditActionsP"
+- !private "So35UISpringLoadedInteractionSupportingP"
+- "So16UIStateRestoringP"
+- "So18UITraitEnvironmentP"
+- "So23UIUserActivityRestoringP"
+- !private "So6UIViewC"
+- "So16UIViewControllerC"
+- "10Calculator14ViewControllerC"
+- !private "s35_HasCustomAnyHashableRepresentationP"
+- "10Foundation27_KeyValueCodingAndObservingP"
+- !private "s21_ObjectiveCBridgeableP"
+- !private "s38__DefaultCustomPlaygroundQuickLookableP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "182b971c297be801725cc9f94237cae8"
