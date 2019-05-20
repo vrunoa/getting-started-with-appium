@@ -22,12 +22,14 @@
   "dependencies": {
     "asyncbox": "^2.3.1",
     "standard": "^12.0.1",
-    "wd": "^1.11.1",
+    "wd": "^1.11.2",
     "webdriverio": "^5.7.8"
   },
   "scripts": {
     "test": "mocha test/apps/* --compilers js:babel-core/register -t 0 --colors --bail",
     "my-first-android-test": "mocha test/test_android_calculator.js --compilers js:babel-core/register -t 0 --colors --bail",
+    "my-first-ios-test": "mocha test/test_ios_calculator.js --compilers js:babel-core/register -t 0 --colors --bail",
+    "my-first-ios-address-book-test": "mocha test/test_ios_address_book.js --compilers js:babel-core/register -t 0 --colors --bail",
     "my-first-android-web-test": "mocha test/browsers/test_android_browser.js --compilers js:babel-core/register -t 0 --colors --bail",
     "my-first-ios-web-test": "mocha test/browsers/test_ios_browser.js --compilers js:babel-core/register -t 0 --colors --bail"
   },
