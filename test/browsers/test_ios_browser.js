@@ -8,7 +8,7 @@ let endpoint = 'http://localhost:4723/wd/hub'
 
 let caps = {
     'browserName': 'safari',
-    'deviceName': 'iPhone 5s',
+    'deviceName': 'appium-simulator',
     'platformName': 'iOS',
     'platformVersion': '12.2'
 }
