@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Getting started with appium</string>
+    <string name="appium_conf">Welcome to\nAppium Conference 2019</string>
+    <string name="lets_get_started">Let\'s get started</string>
+    <string name="your_name">What\'s your name?</string>
+    <string name="begin_workshop">Begin the workshop</string>
+    <string name="agree_to_have_fun">I agree to have fun doing this workshop</string>
+    <string name="login_title">Getting started with appium</string>
+    <string name="please_set_ur_name">Please enter your name to move forward</string>
+    <string name="please_agree_have_fun">You must agree to have fun to proceed with the workshop</string>
+    <string name="welcome_user">Welcome %s</string>
+    <string name="schedule">Schedule</string>
+    <string name="sponsors">Sponsors</string>
+    <string name="location">Location</string>
+    <string name="workshops">Workshops</string>
+    <string name="conduct">Code of conduct</string>
+    <string name="data_promise">Data promise</string>
+    <string name="terms">Terms</string>
+</resources>
