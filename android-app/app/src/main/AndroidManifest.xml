@@ -11,8 +11,8 @@
         android:roundIcon="@drawable/appium_icon"
         android:supportsRtl="false"
         android:theme="@style/AppTheme"
-        android:testOnly="false"
-        android:debuggable="false">
+        android:testOnly="true"
+        android:debuggable="true">
         <activity android:name=".SplashActivity" android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
