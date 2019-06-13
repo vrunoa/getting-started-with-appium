@@ -31,7 +31,8 @@
     "my-first-ios-test": "mocha test/test_ios_calculator.js --compilers js:babel-core/register -t 0 --colors --bail",
     "my-first-ios-address-book-test": "mocha test/test_ios_address_book.js --compilers js:babel-core/register -t 0 --colors --bail",
     "my-first-android-web-test": "mocha test/browsers/test_android_browser.js --compilers js:babel-core/register -t 0 --colors --bail",
-    "my-first-ios-web-test": "mocha test/browsers/test_ios_browser.js --compilers js:babel-core/register -t 0 --colors --bail"
+    "my-first-ios-web-test": "mocha test/browsers/test_ios_browser.js --compilers js:babel-core/register -t 0 --colors --bail",
+    "my-first-touch-actions-test": "mocha test/test_android_browser_touch_action.js --compilers js:babel-core/register -t 0 --colors --bail"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",

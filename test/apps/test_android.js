@@ -12,8 +12,8 @@ let app = path.join(pkgDir.sync(__dirname), 'android-app', 'app', 'build', 'outp
 let endpoint = 'http://localhost:4723/wd/hub'
 let caps = {
     'appPackage': 'io.appium.appiumworkshop',
-    'appActivity': '.SplashActivity',
-    'appWaitActivity': '.SplashActivity',
+    'appActivity': '.MainActivity',
+    //'appWaitActivity': '.SplashActivity',
     'deviceName': 'Android GoogleApi Emulator',
     'platformName': 'Android',
     'platformVersion': '9',
@@ -44,7 +44,7 @@ describe('Android Workshop tests', async () => {
     after(async () => {
         await driver.quit()
     });
-    it('Test SplashActivity has all elements', async () => {
+    it.skip('Test SplashActivity has all elements', async () => {
         let el = await driver.elementById('welcomeText');
         expect(await el.isDisplayed()).to.equal(true);
         expect(await el.text()).to.equal('Welcome to\nAppium Conference 2019');
@@ -55,7 +55,7 @@ describe('Android Workshop tests', async () => {
         expect(await btt.isDisplayed()).to.equal(true);
         expect(await btt.text()).to.equal('LET\'S GET STARTED');
     });
-    it('Test click on startBtt opens LoginActivity', async () => {
+    it.skip('Test click on startBtt opens LoginActivity', async () => {
         let btt = await driver.elementById('startBtt');
         await btt.click();
         await sleep(1500);
@@ -65,7 +65,7 @@ describe('Android Workshop tests', async () => {
         expect(await el.isDisplayed()).to.equal(true);
         expect(await el.text()).to.equal('Getting started with appium');
     });
-    it('Test LoginActivity has all elements displayed', async () => {
+    it.skip('Test LoginActivity has all elements displayed', async () => {
         let el = await driver.elementById('yourNameText');
         expect(await el.isDisplayed()).to.equal(true);
         expect(await el.text()).to.equal('What\'s your name?');
@@ -82,14 +82,14 @@ describe('Android Workshop tests', async () => {
         expect(await el.isDisplayed()).to.equal(true);
         expect(await el.text()).to.equal('BEGIN THE WORKSHOP');
     });
-    it('Test you cant start the workshop without setting your name', async() => {
+    it.skip('Test you cant start the workshop without setting your name', async() => {
         let el = await driver.elementById('beginBtt');
         await el.click();
         el = await driver.elementById('alertText');
         expect(await el.isDisplayed()).to.equal(true);
         expect(await el.text()).to.equal('Please enter your name to move forward');
     });
-    it('Test you can enter your name but cant start the workshop without agreeing terms', async() => {
+    it.skip('Test you can enter your name but cant start the workshop without agreeing terms', async() => {
         let el = await driver.elementById('editText');
         await el.sendKeys('workshoper')
         if (await driver.isKeyboardShown()) {
@@ -101,20 +101,20 @@ describe('Android Workshop tests', async () => {
         expect(await el.isDisplayed()).to.equal(true);
         expect(await el.text()).to.equal('You must agree to have fun to proceed with the workshop');
     });
-    it('Test you can click on agree and move to the next activity', async () => {
+    it.skip('Test you can click on agree and move to the next activity', async () => {
         let el = await driver.elementById('checkbox');
         await el.click();
         el = await driver.elementById('beginBtt');
         await el.click();
-        // let activity = await driver.getCurrentDeviceActivity();
-        // expect(activity).to.equal('.MainActivity');
+        let activity = await driver.getCurrentDeviceActivity();
+        expect(activity).to.equal('.MainActivity');
         el = await driver.elementByXPath('/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.support.v4.widget.DrawerLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.TextView');
         expect(await el.isDisplayed()).to.equal(true);
         expect(await el.text()).to.equal('Welcome workshoper');
         el = await driver.elementByXPath('//android.widget.ImageButton[@content-desc="Navigate up"]');
         expect(await el.isDisplayed()).to.equal(true);
     });
-    it('Test menus opens and elements are displayed', async () => {
+    it.skip('Test menus opens and elements are displayed', async () => {
         let el = await driver.elementByXPath('//android.widget.ImageButton[@content-desc="Navigate up"]');
         await el.click();
         el = await driver.elementById('appiumLogo');

@@ -12,7 +12,7 @@ let caps = {
     'appWaitActivity': 'com.android.calculator2.Calculator',
     'deviceName': 'Android GoogleApi Emulator',
     'platformName': 'Android',
-    'platformVersion': '8.0'
+    'platformVersion': '9'
 }
 
 describe('Android Workshop calculator tests', async () => {

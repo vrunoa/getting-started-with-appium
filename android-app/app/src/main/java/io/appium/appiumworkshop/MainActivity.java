@@ -2,6 +2,7 @@ package io.appium.appiumworkshop;
 
 import android.content.Intent;
 import android.net.Uri;
+import android.os.Build;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
@@ -47,7 +48,11 @@ public class MainActivity extends AppCompatActivity {
         
         webView = findViewById(R.id.webview);
         webView.getSettings().setJavaScriptEnabled(true);
-
+        webView.getSettings().setAllowFileAccess(true);
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            webView.getSettings().setSafeBrowsingEnabled(true);
+        }
+        
         Button bttTerms = navView.findViewById(R.id.bttTerms);
         bttTerms.setOnClickListener(new View.OnClickListener() {
             @Override
